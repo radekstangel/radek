@@ -1,0 +1,136 @@
+// Import Sass functions
+@import "functions";
+
+// Variables
+$bg-color: #44130d;
+$text-color: mix(white, $bg-color, 86%);
+$title-color: white;
+$icon-bg-color: mix(white, $bg-color, 52%);
+$icon-hover-color: darken($bg-color, 4%);
+$icon-bg-hover-color: mix(white, $bg-color, 68%);
+$icon-size: rem-calc(62);
+$icon-font-size: rem-calc(36);
+
+/*
+ * Mobile first
+ */
+html,
+body {
+  box-sizing: border-box;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: $bg-color;
+  color: $text-color;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: rem-calc(18);
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 960px; // 32*30px
+  margin: 0 auto;
+  padding: 0 5%;
+  text-align: center;
+}
+
+// Page title
+.title {
+  color: $title-color;
+  font-size: rem-calc(55);
+  font-weight: 100;
+  line-height: 1.1;
+  margin: 0.8em 0 0.65em;
+}
+
+// Paragraph
+p {
+  margin: 1em 0;
+}
+
+.intro {
+  font-size: 1.25em;
+}
+
+// Social Media
+.social {
+  margin: 3em 0 1.5em;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 1rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  a {
+    align-items: center;
+    background: $icon-bg-color;
+    border-radius: 50%;
+    display: flex;
+    color: $bg-color;
+    font-size: $icon-font-size;
+    height: $icon-size;
+    justify-content: center;
+    outline: 0;
+    text-decoration: none;
+    transition: all 300ms ease-out;
+    width: $icon-size;
+
+    &:hover {
+      background: $icon-bg-hover-color;
+      color: $icon-hover-color;
+    }
+  }
+}
+
+// SVG icons
+[class^="icon-"],
+[class*=" icon-"] {
+  fill: currentColor;
+  height: 1em;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders
+ * from: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Medium screens
+ */
+@media (min-width: 481px) {
+
+  body {
+    font-size: rem-calc(24);
+  }
+
+  .title {
+    font-size: 3em;
+  }
+}
+
+/*
+ * Large screens
+ */
+@media (min-width: 769px) {
+
+  body {
+    font-size: rem-calc(28);
+  }
+}
