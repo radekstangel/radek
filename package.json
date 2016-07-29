@@ -1,0 +1,35 @@
+{
+  "name": "radekstangel.com",
+  "description": "Radek Stangel's professional resume.",
+  "version": "0.1.0",
+  "homepage": "https://radekstangel.com",
+  "author": {
+    "name": "Radek Stangel",
+    "url": "https://radekstangel.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radekstangel/radekstangel.github.io.git"
+  },
+  "scripts": {
+    "start": "gulp",
+    "dist": "gulp dist",
+    "serve:dist": "gulp serve:dist"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7"
+  },
+  "license": "MIT",
+  "private": true
+}
