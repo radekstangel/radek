@@ -8,16 +8,6 @@ import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 
 const $ = gulpLoadPlugins();
-const AUTOPREFIXER_BROWSERS = [
-  'Android >= 4.4',
-  'last 3 Chrome versions',
-  'last 3 Edge versions',
-  'Explorer >= 11',
-  'last 3 Firefox versions',
-  'iOS >= 8',
-  'OperaMini >= 8',
-  'Safari >= 9'
-];
 
 /**
  *   Default :: Development :: Watch For Changes And Reload
@@ -73,7 +63,6 @@ gulp.task('sass', () =>
   gulp.src('src/sass/app.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({precision: 4}).on('error', $.sass.logError))
-    .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('.dev/css'))
     .pipe(browserSync.stream())
