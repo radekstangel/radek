@@ -17,17 +17,17 @@
     "serve:dist": "gulp serve:dist"
   },
   "devDependencies": {
-    "babel-core": "^6.18.2",
+    "babel-core": "^6.21.0",
     "babel-preset-es2015": "^6.18.0",
-    "browser-sync": "^2.18.1",
+    "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-htmlmin": "^3.0.0",
     "gulp-load-plugins": "^1.4.0",
     "gulp-replace": "^0.5.4",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^2.2.0",
-    "gulp-util": "^3.0.7"
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^2.2.1",
+    "gulp-util": "^3.0.8"
   },
   "license": "MIT",
   "private": true
