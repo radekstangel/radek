@@ -19,7 +19,8 @@ gulp.task('default', ['sass'], () => {
     logPrefix: 'RS',
     server: {
       baseDir: ['src', '.dev']
-    }
+    },
+    port: 3076
   });
   gulp.watch(['src/index.html'], browserSync.reload);
   gulp.watch(['src/sass/*.scss'], ['sass']);
@@ -35,7 +36,8 @@ gulp.task('serve:dist', ['dist'], () =>
     logPrefix: 'RS',
     server: {
       baseDir: '.'
-    }
+    },
+    port: 3076
   })
 );
 
