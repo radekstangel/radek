@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/radekstangel/radekstangel.github.io.git"
+    "url": "https://github.com/radekstangel/radekstangel.com.git"
   },
   "scripts": {
     "start": "gulp",
@@ -26,7 +26,7 @@
     "gulp-load-plugins": "^1.5.0",
     "gulp-replace": "^0.5.4",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.5.0",
+    "gulp-sourcemaps": "^2.5.1",
     "gulp-util": "^3.0.8"
   },
   "license": "MIT",
