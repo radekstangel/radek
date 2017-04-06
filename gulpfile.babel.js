@@ -35,7 +35,7 @@ gulp.task('serve:dist', ['dist'], () =>
     notify: false,
     logPrefix: 'RS',
     server: {
-      baseDir: '.'
+      baseDir: 'public'
     },
     port: 3076
   })
@@ -52,7 +52,7 @@ gulp.task('dist', ['minStyles'], () =>
       return '<style>' + style + '</style>';
     }))
     .pipe($.htmlmin({removeComments: true, collapseWhitespace: true}))
-    .pipe(gulp.dest('.'))
+    .pipe(gulp.dest('public'))
 );
 
 /**
