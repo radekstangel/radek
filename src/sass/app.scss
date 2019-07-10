@@ -2,14 +2,14 @@
 @import "functions";
 
 // Variables
-$bg-color: #44130d;
+$bg-color: #232e39;
 $text-color: mix(white, $bg-color, 86%);
 $title-color: white;
 $icon-bg-color: mix(white, $bg-color, 52%);
 $icon-hover-color: darken($bg-color, 4%);
 $icon-bg-hover-color: mix(white, $bg-color, 68%);
-$icon-size: rem-calc(62);
-$icon-font-size: rem-calc(36);
+$icon-size: rem-calc(78); // 62
+$icon-font-size: rem-calc(44); // 36
 
 /*
  * Mobile first
@@ -25,7 +25,8 @@ body {
 body {
   background: $bg-color;
   color: $text-color;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: rem-calc(18);
   font-weight: 300;
   line-height: 1.6;
@@ -50,7 +51,17 @@ p {
 }
 
 .intro {
-  font-size: 1.25em;
+  font-size: 1.3em;
+}
+
+.plus {
+  display: inline-block;
+  font-size: 0.7em;
+  transform: translateY(-2px);
+}
+
+.arrow {
+  margin: 0 0.5em;
 }
 
 // Social Media
@@ -61,7 +72,7 @@ p {
   li {
     display: inline-block;
     list-style-type: none;
-    padding-left: 1rem;
+    padding-left: 1em;
 
     &:first-child {
       padding-left: 0;
@@ -115,7 +126,6 @@ p {
  * Medium screens
  */
 @media (min-width: 481px) {
-
   body {
     font-size: rem-calc(24);
   }
@@ -129,7 +139,6 @@ p {
  * Large screens
  */
 @media (min-width: 769px) {
-
   body {
     font-size: rem-calc(28);
   }
